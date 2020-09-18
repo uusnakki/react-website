@@ -19,7 +19,7 @@ const App = () => {
 
   return (
 
-      <Router class="navbar navbar-expand-lg navbar-light bg-light" style={styles.navigation}>
+      <Router class="navbar navbar-expand-lg bg-dark py-md-3" style={styles.navigation}>
         <div>
           <Link style={padding} to="/">
             <img
@@ -189,7 +189,7 @@ const App = () => {
         </Switch>
 
         <SocialMedia />
-        <i>Joonas Uusnäkki, Information Systems @ JYU</i>
+        <h5 style={{fontSize: "15px"}}>Information Systems @ JYU</h5>
       </Router>
    
   );

@@ -1,8 +1,8 @@
 import React from "react";
-
+import styles from "../App.css";
 const About = () => {
   return (
-    <div>
+    <div className={styles}>
       <p>
         My name is Joonas Uusnäkki. I am 22-year-old student from Espoo.
         Currently I am studying information systems and economics at University

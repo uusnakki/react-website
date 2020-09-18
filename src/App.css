@@ -1,12 +1,21 @@
 .container {
   display: flex;
 }
-body {
-  background-color: #282c34;
-  color: white;
+body, i {
+  background-color: #f5d833;
+  color: darkblue;
   padding: 40px;
-  font-family: Arial;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
+}
+p, Link {
+  color:black;
+  font-size: 18px;
+  
+}
+h1, h2, h3, h4, h5 {
+ 
+  font: bold;
 }
 .kuva {
   border-radius: 8px;
