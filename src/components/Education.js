@@ -1,16 +1,37 @@
-import React from "react";
-import { Grid, Cell } from "react-mdl";
+import React from "react"
 
-const Education = ({ startYear, endYear, educationAbout, schoolName}) => {
+const Education = ({
+  startYear,
+  endYear,
+  educationAbout,
+  schoolName,
+  src,
+  alt,
+}) => {
   return (
-    <Grid>
-      <Cell col={4}>
-        {startYear} - {endYear}
-      </Cell>
-      <Cell col={8}></Cell>
-      <h4 style={{ marginTop: "0px" }}>{schoolName}</h4>
-      <p>{educationAbout}</p>
-    </Grid>
+    <div className="row">
+      
+        <div className="col">
+          {startYear} - {endYear}
+        
+      </div>
+      
+        <div className="col-1">
+          <h4 style={{ marginTop: "0px" }}>{schoolName}</h4>
+        </div>
+      
+
+      <div className="col-sm-9">
+        <img src={src} alt={alt} style={{ height: "100px" }} />
+      </div>
+      <div className="col">
+        <p>{educationAbout}</p>
+      </div>
+
+      <div className="row">
+        <hr style={{ borderTop: "3px solid #833fb6", width: "50%" }} />
+      </div>
+    </div>
   );
 };
 

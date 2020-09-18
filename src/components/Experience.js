@@ -11,6 +11,7 @@ const Experience = ({ startYear, endYear, experienceAbout, jobName, company}) =>
       <h4 style={{ marginTop: "0px" }}>{jobName}</h4>
       <h5 style={{ marginTop: "0px" }}>{company}</h5>
       <p>{experienceAbout}</p>
+      <hr style={{borderTop:"3px solid #833fb6",width:"50%"}}/>
     </Grid>
   );
 };

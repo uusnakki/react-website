@@ -1,11 +1,23 @@
-import React from 'react';
+import React from "react";
+import { ProgressBar } from "react-bootstrap";
 
-const Skills = () => {
-    return (
-      <div>
-     I can do stuff
+const Skills = ({ skill, now }) => {
+  return (
+    <div className="row">
+      <div className="col">{skill}</div>
+      <div className="col-sm-9">
+        <ProgressBar
+          animated
+          style={{
+            width: "30%",
+            position: "relative",
+            border: "1px solid #333",
+          }}
+          now={now}
+        />
       </div>
-    );
-  }
-  
-export default Skills
+    </div>
+  );
+};
+
+export default Skills;
