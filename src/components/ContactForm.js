@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styles from "../App.css"
 import axios from "axios";
 
 const ContactForm = () => {
@@ -11,11 +10,14 @@ const ContactForm = () => {
     e.preventDefault();
     console.log({ email, subject, message });
     axios
-      .post("http://localhost:8080", {
+      .post("/", {
+        headers: { 'content-type': 'application/json' },
+        data: JSON.stringify ({
         email: email,
         subject: subject,
         message: message
       })
+    })   
       .then(function(response) {
         console.log(response);
       })

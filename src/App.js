@@ -14,7 +14,7 @@ import ContactForm from "./components/ContactForm";
 const App = () => {
   const padding = {
     padding: 5,
-    color: "white"
+    color: "black"
   };
 
   return (
