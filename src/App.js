@@ -174,8 +174,7 @@ const App = () => {
             <Skills skill={"JavaScript(React, Node, ReactNative)"} now={70} />
             <Skills skill={"Java"} now={50} />
             <Skills skill={"C#"} now={40} />
-            <Skills skill={"Python"} now={5} />
-            <Skills skill={"R"} now={5} />
+            <Skills skill={"Python"} now={40} />
           </Route>
           <Route path="/future">
             <Future />

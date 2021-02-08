@@ -4,7 +4,7 @@ import { ProgressBar } from "react-bootstrap";
 const Skills = ({ skill, now }) => {
   return (
     <div className="row">
-      <div className="col">{skill}</div>
+      <ul className="col">{skill}</ul>
       <div className="col-sm-9">
         <ProgressBar
           animated
