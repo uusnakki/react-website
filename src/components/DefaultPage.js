@@ -6,8 +6,9 @@ const DefaultPage = () => {
     <div>
       <div className="row">
         <div className="col">
+          <br />
           <img
-            src="https://pbs.twimg.com/profile_images/1074419112451940353/ump3N7iv_400x400.jpg"
+            src={require('./photos/cv.JPG')}
             alt="joonas"
             style={{ borderRadius: "8px",
               width: "200px"}}
