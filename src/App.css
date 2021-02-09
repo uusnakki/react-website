@@ -7,6 +7,7 @@ body, i {
   padding: 40px;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
+  
 }
 p, Link {
   color:black;
@@ -20,4 +21,17 @@ h1, h2, h3, h4, h5 {
 .kuva {
   border-radius: 8px;
   width: 20px;
+}
+.centerStyle {
+  margin: 30px;
+  max-width: 50%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: exo2light;
+  text-align: center;
+  font-size: 1.2 em;
+  color: black;
 }

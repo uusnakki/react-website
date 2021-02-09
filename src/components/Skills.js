@@ -1,22 +1,17 @@
 import React from "react";
 import { ProgressBar } from "react-bootstrap";
+import { Grid, Cell } from "react-mdl";
+import centerStyle from "../App.css";
 
 const Skills = ({ skill, now }) => {
   return (
-    <div className="row">
-      <ul className="col">{skill}</ul>
-      <div className="col-sm-9">
-        <ProgressBar
-          animated
-          style={{
-            width: "30%",
-            position: "relative",
-            border: "1px solid #333",
-          }}
-          now={now}
-        />
-      </div>
-    </div>
+    <Grid style={{ justifyItems: "center" }}>
+      {skill}
+
+      <Cell style={({ height: "0px" },{margin:"auto"}, { width: "380px" })}>
+        <ProgressBar animated now={now} />
+      </Cell>
+    </Grid>
   );
 };
 
