@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className={styles}>
       
-        My name is Joonas Uusnäkki. I am 22-year-old student from Espoo.<br/>
+        My name is Joonas Uusnäkki. I am 23-year-old student from Espoo.<br/>
         Currently I am studying information systems and economics at University
         of Jyväskylä.<br/>
         <div id="container">

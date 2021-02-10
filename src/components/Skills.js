@@ -7,7 +7,7 @@ const Skills = ({ skill, now }) => {
     <Grid >
       <Cell >
       {skill}
-        <ProgressBar animated now={now} style={({ width: "80px" }, {height: "30px"}, {marginBottom:"15px"})} />
+        <ProgressBar asdasd animated now={now} style={({ width: "80px" }, {height: "30px"}, {marginBottom:"15px"})} />
       </Cell>
     </Grid>
   );

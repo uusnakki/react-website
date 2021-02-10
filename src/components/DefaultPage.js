@@ -8,7 +8,7 @@ const DefaultPage = () => {
         <div className="col">
           <br />
           <img
-            src={require('./photos/cv.JPG')}
+            src={require('./photos/cv.jpg')}
             alt="joonas"
             style={{ borderRadius: "8px",
               width: "200px"}}

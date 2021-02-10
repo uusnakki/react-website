@@ -8,10 +8,12 @@ const Education = ({
   schoolName,
   src,
   alt,
+  subject
 }) => {
   return (
     <div style={centerStyle}>
       <h4 style={{ marginTop: "0px" }}>{schoolName}</h4>
+      <h5 style={{ marginTop: "0px" }}>{subject}</h5>
       {startYear} - {endYear}
       <br />
       <img

@@ -9,7 +9,6 @@ import SocialMedia from "./components/SocialMedia";
 import DefaultPage from "./components/DefaultPage";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
-import ContactForm from "./components/ContactForm";
 
 const App = () => {
   const padding = {
@@ -73,29 +72,21 @@ const App = () => {
           />
           Future
         </Link>
-        <Link style={padding} to="/contact">
-          <img
-            src={"https://static.thenounproject.com/png/63098-200.png"}
-            alt="contact"
-            style={{ height: "22px", opacity: "0.7" }}
-          />
-          Contact me!
-        </Link>
       </div>
       <DefaultPage />
       <Switch>
         <Route path="/education">
           <Education
-            schoolName={"University of Jyväskylä"}
+            schoolName={<div>University of Jyväskylä</div>}
+            subject={<div>M.Sc. Economics, Information Systems Science</div>}
             src={"https://www.jyu.fi/@@site-logo/logo.png"}
             alt={"jyu"}
             startYear={2019}
             endYear={2024}
             educationAbout={
               <div>
-                "Main concentration on information systems, software
-                development, business studies, economics and IT in general.{" "}
-                <br />
+                Main concentration on information systems, software development,
+                business studies, economics and IT in general. <br />
                 Highly active in student organization Dumppi ry.
               </div>
             }
@@ -121,7 +112,8 @@ const App = () => {
               <div>
                 Working in a dynamic environment at StartupLab JYU.
                 <br />
-                Developing software and assisting on master's level DevSecOps-course.
+                Developing software and assisting on master's level
+                DevSecOps-course.
                 <br />
                 <br />
                 Main responsibilites:
@@ -129,8 +121,7 @@ const App = () => {
                 - Software development
                 <br />
                 - Course assistance
-                <br />
-                - New technologies
+                <br />- New technologies
               </div>
             }
           />
@@ -245,16 +236,14 @@ const App = () => {
           <About />
         </Route>
         <Route path="/skills">
-          <Skills skill={"JavaScript(React, Node, ReactNative)"} now={70} />
-          <Skills skill={"Java"} now={50} />
+          <Skills skill={"JavaScript(React, ReactNative, NodeJS)"} now={70} />
+          <Skills skill={"Python"} now={50} />
+          <Skills skill={"Java"} now={40} />
           <Skills skill={"C#"} now={40} />
-          <Skills skill={"Python"} now={40} />
+          <Skills skill={"SQL"} now={20} />
         </Route>
         <Route path="/future">
           <Future />
-        </Route>
-        <Route path="/contact">
-          <ContactForm />
         </Route>
         <Route path="/">
           <Home />
