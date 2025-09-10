@@ -1,6 +1,3 @@
-Link to project: https://joonasite.herokuapp.com/
-
-
 ![sieppaus](https://user-images.githubusercontent.com/59486096/107553370-5d2b5f00-6bdd-11eb-9b0c-ce22d434d888.PNG)
 
 
